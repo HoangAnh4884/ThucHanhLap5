@@ -5,6 +5,7 @@
 package thuchanhlap5;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -51,20 +52,6 @@ public class QuanLy_Bai1 {
                 p=new PhongTN_Bai1();
                 p.nhap(); }
             ptn.add(p); } }
-    
-    public void XuatDS_PhongHoc() {
-        System.out.println("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tSố Máy Chiếu\tPhòng Đạt Chuẩn");
-        System.out.println("---------------------------------------------------------------------------------------------------------");
-            for(PhongLT_Bai1 x: plt) { x.xuat(); }
-        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tSố Máy Tính\tPhòng Đạt Chuẩn");
-        System.out.println("---------------------------------------------------------------------------------------------------------");
-            for(PhongMT_Bai1 x: pmt) { x.xuat(); }
-        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tChuyên Ngành\tSức Chứa\tSố Bồn Rửa\tPhòng Đạt Chuẩn");
-        System.out.println("---------------------------------------------------------------------------------------------------------");
-            for(PhongTN_Bai1 x: ptn) { x.xuat(); }
-        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
-        }
         
     void TimPhong(String maPhong) {
         System.out.println("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
@@ -90,6 +77,20 @@ public class QuanLy_Bai1 {
                     x.xuat(); } } }
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
     }
+    
+    public void XuatDS_PhongHoc() {
+        System.out.println("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tSố Máy Chiếu\tPhòng Đạt Chuẩn");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
+            for(PhongLT_Bai1 x: plt) { x.xuat(); }
+        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tSố Máy Tính\tPhòng Đạt Chuẩn");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
+            for(PhongMT_Bai1 x: pmt) { x.xuat(); }
+        System.out.println("Mã Phòng\tDãy Nhà\tDiện Tích\tSố Bóng Đèn\tChuyên Ngành\tSức Chứa\tSố Bồn Rửa\tPhòng Đạt Chuẩn");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
+            for(PhongTN_Bai1 x: ptn) { x.xuat(); }
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+        }
     
     void XuatDS_PhongDC() {
         for(PhongHoc_Bai1 x: ph) {
